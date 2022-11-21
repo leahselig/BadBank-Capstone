@@ -1,0 +1,27 @@
+body {
+  background-image: url("moneycat-background1.jpg");
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.navbar-nav li {
+  position: relative;
+}
+
+.navbar-nav li:hover span {
+  display: block;
+  position: absolute;
+}
+
+.navbar {
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border-bottom: #00bbf0 solid 5px;
+}
+
+.account-link {
+  color: rgb(32, 166, 228) !important;
+}
