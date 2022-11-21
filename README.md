@@ -2,27 +2,33 @@
 
 ## Description:
 
-This Bad Bank Full Stack application is the final capstone project created as part of the MITxPro Full stack with MERN program, which simulates a bank environment, where the user needs to log in, start a session with firebase and start doing operations in the bank such as deposit or withdraw money. The project is created in the MERN stack, which means that the backend is built on NodeJS, Express and MongoDB, and the frontend is built with React. Also, as part of the application for authentication, the project uses firebase.
+This Bad Bank Full Stack application is the final capstone project created as part of the MITxPro Full Stack Development Course. This application simulates a bank environment, where the user needs to log in or create an account and then start doing bank operations, such as deposit or withdraw money. The project was created in the MERN stack, which means that the backend is built on NodeJS, Express and MongoDB, and the frontend is built with React. Also, as part of the application for authentication, the project uses firebase.
 
-## Instalation:
+## Installation:
 
-1. Download the files by clicking the green code button or Clone the project: Go to a directory on your computer and run this command.
+1. Download the files by clicking the green code button or clone the project: Go to a directory on your computer and run this command.
 
 ```bash
 git clone https://github.com/leahselig/BadBank-Capstone.git
 ```
 
-2. Install global dependencies: To run this project you will need to install the `nodemon` package globaly. To do this, you can run this command.
+2. Install global dependencies: To run this project you will need to install the `nodemon` package globally. To do this, you can run this command.
 
 ```bash
-npm i -g nodemon
+npm install -g nodemon
 ```
 
 3. Configurate Firebase: Create a project in firebase [https://console.firebase.google.com/](https://console.firebase.google.com/)
 
-Once the project is created, follow these steps: - Go to your project settings - Under 'General', add a web app - Find the SDK setup and configuration section for your new app - Copy the code for the firebase config - Add this code to the index.html file in the public folder in the project and save the file
+   Once the project is created, follow these steps:
 
-4. Run an instance of mongoDb with Docker: (Be sure you have docker installed on your local mashine) Run this command.
+   - Go to your project settings
+   - Under 'General', add a web app
+   - Find the SDK setup and configuration section for your new app
+   - Copy the code for the firebase config
+   - Add this code to the index.html file in the public folder in the project and save the file
+
+4. Run an instance of MongoDB with Docker: (Be sure you have docker installed on your local machine) Run this command.
 
 ```bash
 docker run -p 27017:27017 --name badbank -d mongo
