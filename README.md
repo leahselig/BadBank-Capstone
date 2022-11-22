@@ -36,8 +36,6 @@ docker run -p 27017:27017 --name badbank -d mongo
 
 5. Install project dependencies from the `root` directory and run:
 
-   - Client: move to `client` directory and run
-
    ```bash
    npm install
    ```
@@ -55,7 +53,7 @@ nodemon index.js
 - MongoDB
 - ReactJS
 - Firebase
-- Docker
+- Bootstrap
 
 ## Features:
 
