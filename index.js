@@ -1,6 +1,10 @@
 var express = require("express");
 var app = express();
 var cors = require("cors");
+
+require("dotenv").config();
+console.log(process.env);
+
 var dal = require("./dal.js");
 
 // Used to serve the static files from the public directory
@@ -67,6 +71,7 @@ app.get("/account/all", function (req, res) {
 });
 
 // Listening for the port
-var port = 3000;
-app.listen(port);
-console.log("Running on port: " + port);
+var port = process.env.PORT || 5000;
+app.listen(port, function () {
+  console.log("Server is running on port: " + port);
+});

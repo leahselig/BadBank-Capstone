@@ -1,7 +1,5 @@
 const MongoClient = require("mongodb").MongoClient;
-const url =
-  "mongodb+srv://lselig:mongodb@cluster-fullbadbank.vq8ekvy.mongodb.net/badbank?retryWrites=true&w=majority";
-
+const url = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/badbank";
 let db = null;
 
 // connect to mongo
