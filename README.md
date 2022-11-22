@@ -4,6 +4,8 @@
 
 This Bad Bank Full Stack application is the final capstone project created as part of the MITxPro Full Stack Development Course. This application simulates a bank environment, where the user needs to log in or create an account and then start doing bank operations, such as deposit or withdraw money. The project was created in the MERN stack, which means that the backend is built on NodeJS, Express and MongoDB, and the frontend is built with React. Also, as part of the application for authentication, the project uses firebase.
 
+<img src="Screenshot.jpg" alt="Screenshot of website">
+
 ## Installation:
 
 1. Download the files by clicking the green code button or clone the project: Go to a directory on your computer and run this command.
@@ -36,9 +38,9 @@ docker run -p 27017:27017 --name badbank -d mongo
 
 5. Install project dependencies from the `root` directory and run:
 
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
 6. Run the project in the `root` of the directory.
 
@@ -46,12 +48,14 @@ docker run -p 27017:27017 --name badbank -d mongo
 nodemon index.js
 ```
 
+7. Navigate to http://localhost:5000 to use the site.
+
 ## Technology used:
 
-- NodeJS
-- Express
 - MongoDB
+- Express
 - ReactJS
+- NodeJS
 - Firebase
 - Bootstrap
 

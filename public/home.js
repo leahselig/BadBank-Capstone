@@ -34,12 +34,8 @@ function Home() {
               <table className="table table-borderless">
                 <thead>
                   <tr>
-                    <th>Welcome to Cat Bank of America</th>
-                    <th className="text-right">
-                      <div className="badge bg-light text-dark">
-                        {" "}
-                        {show ? <>No Active User</> : <>{email}</>}
-                      </div>
+                    <th className="text-center">
+                      Welcome to Cat Bank of America
                     </th>
                   </tr>
                 </thead>

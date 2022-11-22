@@ -1,5 +1,5 @@
 // Login page
-function Login() {
+function Login(props) {
   // Setting up some state and context variables
   const [show, setShow] = React.useState(true);
   const [status, setStatus] = React.useState("");
@@ -17,6 +17,7 @@ function Login() {
       console.log(`Current Email: ${currentUser.user.email}`);
       console.log(`Current UID: ${currentUser.user.uid}`);
       setEmail(currentUser.user.email);
+      props.setUser(currentUser.user.email);
     } else {
       // If the user is logged out...
       setShow(true);

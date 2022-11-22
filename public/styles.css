@@ -13,6 +13,11 @@ body {
   position: absolute;
 }
 
+.user-email {
+  margin-right: 0px;
+  margin-left: auto;
+}
+
 .navbar {
   margin-bottom: 50px;
   font-size: 20px;

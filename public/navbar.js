@@ -1,4 +1,4 @@
-function NavBar() {
+function NavBar(props) {
   return (
     <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="#">
@@ -68,6 +68,7 @@ function NavBar() {
             </a>
           </li>
         </ul>
+        <div className="user-email">{props.user}</div>
       </div>
     </nav>
   );
