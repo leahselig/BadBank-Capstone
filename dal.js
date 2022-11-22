@@ -1,15 +1,16 @@
 const MongoClient = require("mongodb").MongoClient;
 const url =
-  "mongodb+srv://lselig:Mongoose4@cluster-fullbadbank.vq8ekvy.mongodb.net/?retryWrites=true&w=majority" ||
-  "mongodb://127.0.0.1:27017/myproject";
+  "mongodb+srv://lselig:mongodb@cluster-fullbadbank.vq8ekvy.mongodb.net/badbank?retryWrites=true&w=majority";
+
 let db = null;
 
 // connect to mongo
 MongoClient.connect(url, { useUnifiedTopology: true }, function (err, client) {
   console.log("Connected successfully to db server");
-
+  console.log(err);
   // connect to myproject database
-  db = client.db("myproject");
+
+  db = client.db("badbank");
 });
 
 // Function for creating a user in the mongo database
