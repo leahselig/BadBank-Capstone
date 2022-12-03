@@ -86,7 +86,7 @@ function LoggedInMsg(props) {
 
   return (
     <>
-      <h5>You are currently logged in as {currentUser.user.email}!</h5>
+      <h5>You are currently logged in!</h5>
       <a
         href="#/activity/"
         className="account-link"
